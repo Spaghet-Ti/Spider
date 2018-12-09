@@ -3,6 +3,7 @@ import "popper.js";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "../index.css";
+const species = require("../data/species.json");
 
 class Species extends Component {
     render() {
@@ -32,7 +33,29 @@ class Species extends Component {
                             gridTemplateRows: "1fr 0 1fr"
                         }}
                     >
-                        <div id="common-name">abc</div>
+                        <div id="common-name">
+                            <h6 className="cell-name">Common Name: </h6>
+                            <div className="cell-content dropdown">
+                                <select
+                                    className="form-control"
+                                    id="common-name-selector"
+                                >
+                                    <option value="">
+                                        Select by Common Name
+                                    </option>
+                                    {species.data.species.map(selection => {
+                                        return (
+                                            <option
+                                                value={selection.common_name}
+                                                key={selection.id}
+                                            >
+                                                {selection.common_name}
+                                            </option>
+                                        );
+                                    })}
+                                </select>
+                            </div>
+                        </div>
                         <hr className="m-0" />
                         <div id="latin-name">abc</div>
                     </div>
@@ -49,7 +72,7 @@ class Species extends Component {
                         <hr className="m-0" />
                         <div id="">abc</div>
                     </div>
-                    <div id="endangered-status" className="border h-100">
+                    <div id="conservation-status" className="border h-100">
                         abc
                     </div>
                     {/* Row 2 */}
@@ -74,7 +97,7 @@ class Species extends Component {
                         abc
                     </div>
                     <div
-                        id=""
+                        id="map"
                         className="border h-100"
                         style={{ gridArea: "4 / 2 / 6 / 3" }}
                     >

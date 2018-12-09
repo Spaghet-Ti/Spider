@@ -1,0 +1,26 @@
+{
+    "last_updated": "",
+    "data": {
+        "species": [
+            {
+                "id": "0",
+                "common_name": "Demo",
+                "latin_name": "Demo",
+                "description": "This is a demo species, it will be removed when the data comes.",
+                "missing1": "Bluh bluh bluh",
+                "diet": "Whatever (this, that, etc.)",
+                "habitat": "Mostly seen nowhere all over the world",
+                "missing2": "Bluh bluh bluh",
+                "missing3": "Bluh bluh bluh",
+                "missing4": "Bluh bluh bluh",
+                "conservation_status": {
+                    "name": "https://en.wikipedia.org/wiki/Conservation_status",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Status_iucn3.1_[ABBR.].svg"
+                },
+                "images": ["img1_url", "img2_url", "img3_url"],
+                "map": "map_url",
+                "missing5": "Bluh bluh bluh"
+            }
+        ]
+    }
+}

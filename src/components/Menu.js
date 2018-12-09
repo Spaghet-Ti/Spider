@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { jQuery as $ } from "jquery";
 import "popper.js";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
