@@ -3,7 +3,8 @@
     "data": {
         "species": [
             {
-                "id": "0",
+                "id": "s0",
+                "index": 0,
                 "common_name": "Demo",
                 "latin_name": "Demo",
                 "description": "This is a demo species, it will be removed when the data comes.",
@@ -17,9 +18,29 @@
                     "name": "https://en.wikipedia.org/wiki/Conservation_status",
                     "icon": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Status_iucn3.1_[ABBR.].svg"
                 },
-                "images": ["img1_url", "img2_url", "img3_url"],
-                "map": "map_url",
+                "gallery": ["img1_url", "img2_url", "img3_url"],
+                "distribution": "map_url",
                 "missing5": "Bluh bluh bluh"
+            },
+            {
+                "id": "s1",
+                "index": 1,
+                "common_name": "Demo2",
+                "latin_name": "Demo2",
+                "description": "This is the second demo species, it will be removed when the data comes.",
+                "missing1": "ABC",
+                "diet": "Whatever (this, that, etc.)",
+                "habitat": "Never seen anywhere",
+                "missing2": "ABC",
+                "missing3": "ABC",
+                "missing4": "ABC",
+                "conservation_status": {
+                    "name": "https://en.wikipedia.org/wiki/Conservation_status",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Status_iucn3.1_[ABBR.].svg"
+                },
+                "gallery": ["img1_url", "img2_url", "img3_url"],
+                "distribution": "map_url",
+                "missing5": "ABC"
             }
         ]
     }
