@@ -125,19 +125,26 @@ class Species extends Component {
                     <div id="conservation-status" className="cell border h-100">
                         <h6 className="cell-name">Conservation Status: </h6>
                         <div className="cell-content">
-                            {presentSpecies
-                                ? data.data.species[presentSpecies]
-                                      .conservation_status.name +
-                                  <br /> +
-                                  (
-                                      <img
-                                          src={
-                                              data.data.species[presentSpecies]
-                                                  .conservation_status.icon
-                                          }
-                                      />
-                                  )
-                                : ""}
+                            {presentSpecies ? (
+                                <div className="text-center">
+                                    <b>
+                                        {
+                                            data.data.species[presentSpecies]
+                                                .conservation_status.name
+                                        }
+                                    </b>
+                                    <br />
+                                    <img
+                                        src={require("../data/images/conservation_status/" +
+                                            data.data.species[presentSpecies]
+                                                .conservation_status.icon +
+                                            ".png")}
+                                        style={{ width: "100%" }}
+                                    />
+                                </div>
+                            ) : (
+                                ""
+                            )}
                         </div>
                     </div>
                     {/* Row 2 */}
@@ -157,9 +164,89 @@ class Species extends Component {
                         }}
                     >
                         <div className="cell-content">
-                            {presentSpecies
-                                ? data.data.species[presentSpecies].gallery
-                                : ""}
+                            <div
+                                id="gallery-carousel"
+                                className="carousel slide"
+                                style={{
+                                    maxHeight: 200.534,
+                                    maxWidth: 500.334
+                                }}
+                                data-ride="carousel"
+                                data-interval="false"
+                            >
+                                <ol className="carousel-indicators">
+                                    {presentSpecies
+                                        ? data.data.species[
+                                              presentSpecies
+                                          ].gallery.map((image, index) => {
+                                              return (
+                                                  <li
+                                                      data-target="#gallery-carousel"
+                                                      data-slide-to={index}
+                                                      className={
+                                                          index == 0
+                                                              ? " active"
+                                                              : ""
+                                                      }
+                                                      key={"si" + index}
+                                                  />
+                                              );
+                                          })
+                                        : ""}
+                                    <li
+                                        data-target="#carouselExampleIndicators"
+                                        data-slide-to="1"
+                                    />
+                                    <li
+                                        data-target="#carouselExampleIndicators"
+                                        data-slide-to="2"
+                                    />
+                                </ol>
+                                <div className="carousel-inner">
+                                    {presentSpecies
+                                        ? data.data.species[
+                                              presentSpecies
+                                          ].gallery.map((image, index) => {
+                                              return (
+                                                  <div
+                                                      className={
+                                                          "carousel-item" +
+                                                          (index == 0
+                                                              ? " active"
+                                                              : "")
+                                                      }
+                                                      key={"si" + index}
+                                                  >
+                                                      <img
+                                                          className="d-block w-100"
+                                                          src={image}
+                                                          style={{
+                                                              maxHeight: 200.534,
+                                                              maxWidth: 500.334
+                                                          }}
+                                                      />
+                                                  </div>
+                                              );
+                                          })
+                                        : ""}
+                                </div>
+                                <a
+                                    className="carousel-control-prev"
+                                    href="#gallery-carousel"
+                                    role="button"
+                                    data-slide="prev"
+                                >
+                                    <span className="carousel-control-prev-icon" />
+                                </a>
+                                <a
+                                    className="carousel-control-next"
+                                    href="#gallery-carousel"
+                                    role="button"
+                                    data-slide="next"
+                                >
+                                    <span className="carousel-control-next-icon" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     {/* Row 3 */}
@@ -187,9 +274,20 @@ class Species extends Component {
                     >
                         <h6 className="cell-name">Distribution: </h6>
                         <div className="cell-content">
-                            {presentSpecies
-                                ? data.data.species[presentSpecies].distribution
-                                : ""}
+                            {presentSpecies ? (
+                                <img
+                                    src={require("../data/images/distribution/" +
+                                        data.data.species[presentSpecies]
+                                            .index +
+                                        ".png")}
+                                    style={{
+                                        maxHeight: "100%",
+                                        maxWidth: "100%"
+                                    }}
+                                />
+                            ) : (
+                                ""
+                            )}
                         </div>
                     </div>
                     <div
@@ -227,8 +325,8 @@ class Species extends Component {
                             margin-bottom: 2px;\
                         }\
                         .cell-content {\
-                            font-size: 12px;\
                             padding: 2px 2px 0 2px;\
+                            font-size: 12px;\
                         }\
                     "
                     }
