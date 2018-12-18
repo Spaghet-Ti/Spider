@@ -1,7 +1,7 @@
 {
   "main.css": "/Spider/static/css/main.e4e5d382.chunk.css",
-  "main.js": "/Spider/static/js/main.7579ba2b.chunk.js",
-  "main.js.map": "/Spider/static/js/main.7579ba2b.chunk.js.map",
+  "main.js": "/Spider/static/js/main.2b2cef89.chunk.js",
+  "main.js.map": "/Spider/static/js/main.2b2cef89.chunk.js.map",
   "static/css/1.3372bd8b.chunk.css": "/Spider/static/css/1.3372bd8b.chunk.css",
   "static/js/1.52cbb8ed.chunk.js": "/Spider/static/js/1.52cbb8ed.chunk.js",
   "static/js/1.52cbb8ed.chunk.js.map": "/Spider/static/js/1.52cbb8ed.chunk.js.map",
@@ -20,9 +20,9 @@
   "static/media/0.png": "/Spider/static/media/0.c8934c1e.png",
   "static/media/1.png": "/Spider/static/media/1.9e37357b.png",
   "static/media/EN.png": "/Spider/static/media/EN.3d3d47bf.png",
-  "static/css/main.e4e5d382.chunk.css.map": "/Spider/static/css/main.e4e5d382.chunk.css.map",
   "static/css/1.3372bd8b.chunk.css.map": "/Spider/static/css/1.3372bd8b.chunk.css.map",
+  "static/css/main.e4e5d382.chunk.css.map": "/Spider/static/css/main.e4e5d382.chunk.css.map",
   "index.html": "/Spider/index.html",
-  "precache-manifest.5985e6ec0e66fc97f33b5a1cf654067e.js": "/Spider/precache-manifest.5985e6ec0e66fc97f33b5a1cf654067e.js",
+  "precache-manifest.b68522a76460fcfeb946cfd67dcd5375.js": "/Spider/precache-manifest.b68522a76460fcfeb946cfd67dcd5375.js",
   "service-worker.js": "/Spider/service-worker.js"
 }
