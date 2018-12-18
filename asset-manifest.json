@@ -1,7 +1,7 @@
 {
   "main.css": "/Spider/static/css/main.e4e5d382.chunk.css",
-  "main.js": "/Spider/static/js/main.2b2cef89.chunk.js",
-  "main.js.map": "/Spider/static/js/main.2b2cef89.chunk.js.map",
+  "main.js": "/Spider/static/js/main.9cdbd0f7.chunk.js",
+  "main.js.map": "/Spider/static/js/main.9cdbd0f7.chunk.js.map",
   "static/css/1.3372bd8b.chunk.css": "/Spider/static/css/1.3372bd8b.chunk.css",
   "static/js/1.52cbb8ed.chunk.js": "/Spider/static/js/1.52cbb8ed.chunk.js",
   "static/js/1.52cbb8ed.chunk.js.map": "/Spider/static/js/1.52cbb8ed.chunk.js.map",
@@ -23,6 +23,6 @@
   "static/css/1.3372bd8b.chunk.css.map": "/Spider/static/css/1.3372bd8b.chunk.css.map",
   "static/css/main.e4e5d382.chunk.css.map": "/Spider/static/css/main.e4e5d382.chunk.css.map",
   "index.html": "/Spider/index.html",
-  "precache-manifest.b68522a76460fcfeb946cfd67dcd5375.js": "/Spider/precache-manifest.b68522a76460fcfeb946cfd67dcd5375.js",
+  "precache-manifest.3aff5a4ca8b9931f6d21158cc8b0dfd7.js": "/Spider/precache-manifest.3aff5a4ca8b9931f6d21158cc8b0dfd7.js",
   "service-worker.js": "/Spider/service-worker.js"
 }
