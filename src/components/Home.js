@@ -16,7 +16,7 @@ class Home extends Component {
                             The are many common species of spiders, check it
                             out!
                         </p>
-                        <a href="/species" className="btn btn-primary">
+                        <a href="./species" className="btn btn-primary">
                             View
                         </a>
                     </div>

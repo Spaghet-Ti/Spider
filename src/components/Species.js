@@ -10,13 +10,6 @@ const data = require("../data/species.json");
 
 var presentSpecies;
 
-function changeSpecies(target) {
-    console.log(target);
-    presentSpecies = target;
-    // console.log(selectId);
-    // console.log(data);
-}
-
 class Species extends Component {
     render() {
         return (
@@ -140,6 +133,7 @@ class Species extends Component {
                                                 .conservation_status.icon +
                                             ".png")}
                                         style={{ width: "100%" }}
+                                        alt="Conservation Status Icon"
                                     />
                                 </div>
                             ) : (
@@ -184,7 +178,7 @@ class Species extends Component {
                                                       data-target="#gallery-carousel"
                                                       data-slide-to={index}
                                                       className={
-                                                          index == 0
+                                                          index === 0
                                                               ? " active"
                                                               : ""
                                                       }
@@ -211,7 +205,7 @@ class Species extends Component {
                                                   <div
                                                       className={
                                                           "carousel-item" +
-                                                          (index == 0
+                                                          (index === 0
                                                               ? " active"
                                                               : "")
                                                       }
@@ -224,6 +218,7 @@ class Species extends Component {
                                                               maxHeight: 200.534,
                                                               maxWidth: 500.334
                                                           }}
+                                                          alt="Gallery Photo"
                                                       />
                                                   </div>
                                               );
@@ -284,6 +279,7 @@ class Species extends Component {
                                         maxHeight: "100%",
                                         maxWidth: "100%"
                                     }}
+                                    alt="Species Distribution"
                                 />
                             ) : (
                                 ""
