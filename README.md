@@ -3,6 +3,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Collaborators
 
 * __Andrew Xu__ (Current Github Account)
-* __Jackson Nimchuk__
+* __Jackson Nimchuk__ ([Cobbons](https://github.com/cobbonds))
 
 For Student-Led Projects at Guy B. Phillips Middle School, Chapel Hill, NC, USA
