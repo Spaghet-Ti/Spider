@@ -8,7 +8,7 @@ class Menu extends Component {
         return (
             <nav id="menu" className="navbar sticky-top navbar-light bg-light">
                 <a className="navbar-brand" href="/">
-                    Spider
+                    Spiders & Tarantulas
                 </a>
             </nav>
         );

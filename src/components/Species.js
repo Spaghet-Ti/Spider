@@ -4,7 +4,7 @@ import "popper.js";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "../index.css";
-import Router from "../Router";
+import Router from "../index";
 
 const data = require("../data/species.json");
 
@@ -46,14 +46,16 @@ class Species extends Component {
                                     className="form-control"
                                     defaultValue=""
                                     ref={input => (this.menu = input)}
-                                    onChange={() => {
-                                        presentSpecies = this.menu.value;
+                                >
+                                    {setInterval(() => {
+                                        presentSpecies = this.menu
+                                            ? this.menu.value
+                                            : undefined;
                                         ReactDOM.render(
                                             <Router />,
                                             document.getElementById("root")
                                         );
-                                    }}
-                                >
+                                    }, 500)}
                                     <option value="">
                                         Select by Common Name
                                     </option>
@@ -88,57 +90,58 @@ class Species extends Component {
                             gridTemplateRows: "1fr 0 1fr 0 1fr"
                         }}
                     >
-                        <div id="" className="cell">
-                            <h6 className="cell-name">Missing 2: </h6>
+                        <div id="venom-status" className="cell">
+                            <h6 className="cell-name">Venom Status: </h6>
                             <div className="cell-content">
                                 {presentSpecies
-                                    ? data.data.species[presentSpecies].missing2
+                                    ? data.data.species[presentSpecies].venom
                                     : ""}
                             </div>
                         </div>
                         <hr className="m-0" />
-                        <div id="" className="cell">
-                            <h6 className="cell-name">Missing 3: </h6>
+                        <div id="web-type" className="cell">
+                            <h6 className="cell-name">Web Type: </h6>
                             <div className="cell-content">
                                 {presentSpecies
-                                    ? data.data.species[presentSpecies].missing3
+                                    ? data.data.species[presentSpecies].web
                                     : ""}
                             </div>
                         </div>
                         <hr className="m-0" />
-                        <div id="" className="cell">
-                            <h6 className="cell-name">Missing 4: </h6>
+                        <div id="time-period" className="cell">
+                            <h6 className="cell-name">Time Period: </h6>
                             <div className="cell-content">
                                 {presentSpecies
-                                    ? data.data.species[presentSpecies].missing4
+                                    ? data.data.species[presentSpecies].time
                                     : ""}
                             </div>
                         </div>
                     </div>
-                    <div id="conservation-status" className="cell border h-100">
-                        <h6 className="cell-name">Conservation Status: </h6>
-                        <div className="cell-content">
-                            {presentSpecies ? (
-                                <div className="text-center">
-                                    <b>
-                                        {
-                                            data.data.species[presentSpecies]
-                                                .conservation_status.name
-                                        }
-                                    </b>
-                                    <br />
-                                    <img
-                                        src={require("../data/images/conservation_status/" +
-                                            data.data.species[presentSpecies]
-                                                .conservation_status.icon +
-                                            ".png")}
-                                        style={{ width: "100%" }}
-                                        alt="Conservation Status Icon"
-                                    />
-                                </div>
-                            ) : (
-                                ""
-                            )}
+                    <div
+                        className="border h-100"
+                        style={{
+                            display: "grid",
+                            gridTemplateRows: "1fr 0 1fr"
+                        }}
+                    >
+                        <div id="classification" className="cell h-100">
+                            <h6 className="cell-name">Classification: </h6>
+                            <div className="cell-content">
+                                {presentSpecies
+                                    ? data.data.species[presentSpecies]
+                                          .classification
+                                    : ""}
+                            </div>
+                        </div>
+                        <hr className="m-0" />
+                        <div id="predators" className="cell h-100">
+                            <h6 className="cell-name">Predators: </h6>
+                            <div className="cell-content">
+                                {presentSpecies
+                                    ? data.data.species[presentSpecies]
+                                          .predators
+                                    : ""}
+                            </div>
                         </div>
                     </div>
                     {/* Row 2 */}
@@ -162,8 +165,8 @@ class Species extends Component {
                                 id="gallery-carousel"
                                 className="carousel slide"
                                 style={{
-                                    maxHeight: 200.534,
-                                    maxWidth: 500.334
+                                    maxHeight: "100%",
+                                    maxWidth: "100%"
                                 }}
                                 data-ride="carousel"
                                 data-interval="false"
@@ -215,10 +218,10 @@ class Species extends Component {
                                                           className="d-block w-100"
                                                           src={image}
                                                           style={{
-                                                              maxHeight: 200.534,
-                                                              maxWidth: 500.334
+                                                              maxHeight: "100%",
+                                                              maxWidth: "100%"
                                                           }}
-                                                          alt="Gallery Photo"
+                                                          alt="Spider Gallery"
                                                       />
                                                   </div>
                                               );
@@ -245,49 +248,51 @@ class Species extends Component {
                         </div>
                     </div>
                     {/* Row 3 */}
-                    <div id="" className="cell border h-100">
-                        <h6 className="cell-name">Missing 1: </h6>
-                        <div className="cell-content">
-                            {presentSpecies
-                                ? data.data.species[presentSpecies].missing1
-                                : ""}
-                        </div>
-                    </div>
-                    {/* Row 4 */}
-                    <div id="diet" className="cell border h-100">
-                        <h6 className="cell-name">Diet: </h6>
-                        <div className="cell-content">
-                            {presentSpecies
-                                ? data.data.species[presentSpecies].diet
-                                : ""}
-                        </div>
-                    </div>
-                    <div
-                        id="distribution"
-                        className="cell border h-100"
-                        style={{ gridArea: "4 / 2 / 6 / 3" }}
-                    >
-                        <h6 className="cell-name">Distribution: </h6>
+                    <div id="conservation-status" className="cell border h-100">
+                        <h6 className="cell-name">Conservation Status: </h6>
                         <div className="cell-content">
                             {presentSpecies ? (
-                                <img
-                                    src={require("../data/images/distribution/" +
-                                        data.data.species[presentSpecies]
-                                            .index +
-                                        ".png")}
-                                    style={{
-                                        maxHeight: "100%",
-                                        maxWidth: "100%"
-                                    }}
-                                    alt="Species Distribution"
-                                />
+                                <div className="text-center">
+                                    <b>
+                                        {
+                                            data.data.species[presentSpecies]
+                                                .conservation.name
+                                        }
+                                    </b>
+                                    <br />
+                                    <img
+                                        src={require("../data/images/conservation_status/" +
+                                            data.data.species[presentSpecies]
+                                                .conservation.icon +
+                                            ".png")}
+                                        style={{ width: "100%" }}
+                                        alt="Conservation Status Icon"
+                                    />
+                                </div>
                             ) : (
                                 ""
                             )}
                         </div>
                     </div>
+                    {/* Row 4 */}
+                    <div id="what-to-feed" className="cell border h-100">
+                        <h6 className="cell-name">What to Feed: </h6>
+                        <div className="cell-content">
+                            {presentSpecies
+                                ? data.data.species[presentSpecies].feed
+                                : ""}
+                        </div>
+                    </div>
+                    <div id="distribution" className="cell border h-100">
+                        <h6 className="cell-name">distribution: </h6>
+                        <div className="cell-content">
+                            {presentSpecies
+                                ? data.data.species[presentSpecies].distribution
+                                : ""}
+                        </div>
+                        <div />
+                    </div>
                     <div
-                        id=""
                         className="cell border h-100"
                         style={{ gridArea: "4 / 3 / 6 / 4" }}
                     >
@@ -304,6 +309,15 @@ class Species extends Component {
                         <div className="cell-content">
                             {presentSpecies
                                 ? data.data.species[presentSpecies].habitat
+                                : ""}
+                        </div>
+                        <div />
+                    </div>
+                    <div id="how-to-keep-them" className="cell border h-100">
+                        <h6 className="cell-name">How to Keep Them: </h6>
+                        <div className="cell-content">
+                            {presentSpecies
+                                ? data.data.species[presentSpecies].keeping
                                 : ""}
                         </div>
                         <div />
