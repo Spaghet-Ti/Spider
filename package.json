@@ -1,6 +1,6 @@
 {
-    "name": "spiders-and-tarantulas",
-    "homepage": "https://spaghet-ti.github.io/Spider",
+    "name": "spiders_and_tarantulas",
+    "homepage": "https://spaghet-ti.github.io/Spiders&Tarantulas",
     "devDependencies": {
         "gh-pages": "^2.0.1",
         "react-scripts": "2.1.1"
