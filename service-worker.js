@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Spiders-Tarantulas/precache-manifest.18371bd049e3d7dc93208acbf60fd534.js"
+  "/Spiders-Tarantulas/precache-manifest.9fffef0a91be4a7a6e14146ae1f62519.js"
 );
 
 workbox.clientsClaim();

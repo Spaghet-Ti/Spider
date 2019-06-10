@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Spiders-Tarantulas/static/media/EX.717fd562.png"
   },
   {
-    "revision": "279660fe0866d60563f0",
+    "revision": "8b5734ad93308659777f",
     "url": "/Spiders-Tarantulas/static/css/main.c46d46ea.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/Spiders-Tarantulas/static/media/EW.63c55646.png"
   },
   {
-    "revision": "279660fe0866d60563f0",
-    "url": "/Spiders-Tarantulas/static/js/main.279660fe.chunk.js"
+    "revision": "8b5734ad93308659777f",
+    "url": "/Spiders-Tarantulas/static/js/main.8b5734ad.chunk.js"
   },
   {
     "revision": "7db9349d4d2241bb5e6bf131b535fef8",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/Spiders-Tarantulas/static/css/1.44f60170.chunk.css"
   },
   {
-    "revision": "657cf05a26650ddbc8ce7fcc470900e2",
+    "revision": "bbbc1b5965540975add001fe61481e75",
     "url": "/Spiders-Tarantulas/index.html"
   }
 ];
