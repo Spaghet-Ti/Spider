@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Spiders&Tarantulas/precache-manifest.3f0102a454a49af1e2d6a26ca6935480.js"
+  "/Spiders-Tarantulas/precache-manifest.0b7fe8e525f1d0c3620169f5c242d50b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Spiders&Tarantulas/index.html", {
+workbox.routing.registerNavigationRoute("/Spiders-Tarantulas/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
