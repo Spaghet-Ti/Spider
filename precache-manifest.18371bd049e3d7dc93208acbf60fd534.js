@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/Spiders-Tarantulas/static/media/EX.717fd562.png"
   },
   {
-    "revision": "ee238930fde1a1ebb636",
-    "url": "/Spiders-Tarantulas/static/css/main.95dad738.chunk.css"
+    "revision": "279660fe0866d60563f0",
+    "url": "/Spiders-Tarantulas/static/css/main.c46d46ea.chunk.css"
   },
   {
     "revision": "87398af43638daecc601bf9047a45d00",
     "url": "/Spiders-Tarantulas/static/media/VU.87398af4.png"
   },
   {
-    "revision": "d3f871047ac713115e1a",
-    "url": "/Spiders-Tarantulas/static/js/1.d3f87104.chunk.js"
+    "revision": "4a472b26e386b24aae17",
+    "url": "/Spiders-Tarantulas/static/js/1.4a472b26.chunk.js"
   },
   {
     "revision": "3fca8fc39754ac2599dc",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/Spiders-Tarantulas/static/media/EW.63c55646.png"
   },
   {
-    "revision": "ee238930fde1a1ebb636",
-    "url": "/Spiders-Tarantulas/static/js/main.ee238930.chunk.js"
+    "revision": "279660fe0866d60563f0",
+    "url": "/Spiders-Tarantulas/static/js/main.279660fe.chunk.js"
   },
   {
     "revision": "7db9349d4d2241bb5e6bf131b535fef8",
@@ -60,11 +60,11 @@ self.__precacheManifest = [
     "url": "/Spiders-Tarantulas/static/media/Status.409e2def.png"
   },
   {
-    "revision": "d3f871047ac713115e1a",
-    "url": "/Spiders-Tarantulas/static/css/1.f8689b66.chunk.css"
+    "revision": "4a472b26e386b24aae17",
+    "url": "/Spiders-Tarantulas/static/css/1.44f60170.chunk.css"
   },
   {
-    "revision": "b7a7496915ded036a64fa3daa0ea1488",
+    "revision": "657cf05a26650ddbc8ce7fcc470900e2",
     "url": "/Spiders-Tarantulas/index.html"
   }
 ];
