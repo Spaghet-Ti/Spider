@@ -15,9 +15,12 @@ class Router extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <Route path="/" component={Menu} />
-                    <Route path="/" component={Home} exact />
-                    <Route path="/species" component={Species} />
+                    <Route path="/Spiders-Tarantulas/" component={Menu} />
+                    <Route path="/Spiders-Tarantulas/" component={Home} exact />
+                    <Route
+                        path="/Spiders-Tarantulas/species"
+                        component={Species}
+                    />
                 </div>
             </BrowserRouter>
         );
@@ -31,4 +34,4 @@ ReactDOM.render(<Router />, document.getElementById("root"));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.register();
+serviceWorker.unregister();
