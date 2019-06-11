@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router";
 import "popper.js";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
@@ -16,9 +17,9 @@ class Home extends Component {
                             Learn about the common spiders in North Carolina and{" "}
                             <b>how to keep them</b>. Check it out!
                         </p>
-                        <a href="/species" className="btn btn-primary">
+                        <Link to="/species" className="btn btn-primary">
                             View
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
