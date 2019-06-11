@@ -1,5 +1,6 @@
 {
     "name": "spiders_and_tarantulas",
+    "homepage": "https://spiders-tarantulas.netlify.com/",
     "devDependencies": {
         "react-scripts": "2.1.1"
     },
