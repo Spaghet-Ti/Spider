@@ -1,13 +1,11 @@
 {
     "name": "spiders_and_tarantulas",
-    "homepage": "https://spaghet-ti.github.io/Spiders-Tarantulas",
     "devDependencies": {
-        "gh-pages": "^2.0.1",
         "react-scripts": "2.1.1"
     },
     "dependencies": {
-        "bootstrap": "^4.1.3",
-        "jquery": "^3.3.1",
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.4.1",
         "popper.js": "^1.14.6",
         "react": "^16.6.3",
         "react-dom": "^16.6.3",
@@ -17,8 +15,6 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {
