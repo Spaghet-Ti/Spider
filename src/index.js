@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { Router, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 import Menu from "./components/Menu";
 import Home from "./components/Home";
@@ -13,13 +13,13 @@ import * as serviceWorker from "./serviceWorker";
 class Router extends Component {
     render() {
         return (
-            <Router>
+            <BrowserRouter>
                 <div>
                     <Route path="/" component={Menu} />
                     <Route path="/" component={Home} exact />
                     <Route path="/species" component={Species} />
                 </div>
-            </Router>
+            </BrowserRouter>
         );
     }
 }
