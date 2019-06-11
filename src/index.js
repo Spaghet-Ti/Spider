@@ -15,12 +15,9 @@ class Router extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <Route path="/Spiders-Tarantulas/" component={Menu} />
-                    <Route path="/Spiders-Tarantulas/" component={Home} exact />
-                    <Route
-                        path="/Spiders-Tarantulas/species"
-                        component={Species}
-                    />
+                    <Route path="/" component={Menu} />
+                    <Route path="/" component={Home} exact />
+                    <Route path="/species" component={Species} />
                 </div>
             </BrowserRouter>
         );

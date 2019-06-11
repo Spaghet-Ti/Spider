@@ -16,7 +16,7 @@ class Home extends Component {
                             Learn about the common spiders in North Carolina and{" "}
                             <b>how to keep them</b>. Check it out!
                         </p>
-                        <a href="./species" className="btn btn-primary">
+                        <a href="/species" className="btn btn-primary">
                             View
                         </a>
                     </div>
